@@ -6,10 +6,12 @@ const User = function () {
     change = [];
 
   Object.defineProperties(this, {
+    // using data descriptor
     id: {
       enumerable: true,
       value: `UID-${parseInt(Math.random() * 30000)}-XZ`,
     },
+    // using exessive descriptor
     name: {
       enumerable: true,
       get() {
